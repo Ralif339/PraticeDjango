@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}
+Фитнес
+{% endblock title %}
+
+{% block content %}
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Достигните своих целей в области фитнеса с нами!</h1>
+        <p>Мы предлагаем индивидуальные планы тренировок, диетические рекомендации и поддержку, 
+          которые помогут вам достичь ваших целей в области фитнеса.</p>
+        <a href="{% url "service" %}" class="btn">Записаться</a>
+      </div>
+      <div class="hero-image">
+        <img src="{% static "img/sport.jpg" %}" alt="Изображение здорового человека, занимающегося фитнесом">
+      </div>
+    </section>
+    <section class="services">
+      <h2>Наши услуги</h2>
+      <div class="services-list">
+        <div class="service">
+          <img src="{% static "img/trainer.png" %}" alt="Иконка персональных тренировок" />
+          <h3>Персональные тренировки</h3>
+          <p>Мы работаем с вами один на один, чтобы создать индивидуальный план тренировок, который соответствует вашим целям и потребностям.</p>
+        </div>
+        <div class="service">
+          <img src="{% static "img/food.png" %}" alt="Иконка диетических рекомендаций">
+          <h3>Диетические рекомендации</h3>
+          <p>Мы предоставляем индивидуальные диетические рекомендации, которые помогут вам питаться здоровой и сбалансированной пищей.</p>
+        </div>
+        <div class="service">
+          <img src="{% static "img/support.png" %}" alt="Иконка поддержки">
+          <h3>Поддержка</h3>
+          <p>Мы предоставляем постоянную поддержку, чтобы вы оставались мотивированными и достигали своих целей.</p>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <h2>Отзывы наших клиентов</h2>
+      <div class="testimonials-list">
+        <div class="testimonial">
+          <p>"Я так рада, что нашла этот сайт. Персональные тренировки и диетические рекомендации действительно помогли мне достичь моих целей в области фитнеса."</p>
+          <div class="testimonial-author">
+            <img src="{% static "img/woman(man).jpg" %}" alt="Аватар клиента">
+            <h4>Мария, Москва</h4>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p>"Я был очень впечатлен поддержкой, которую я получил от команды сайта. Они всегда были готовы ответить на мои вопросы и поддержать меня."</p>
+          <div class="testimonial-author">
+            <img src="{% static "img/albert.jpg" %}" alt="Аватар клиента">
+            <h4>Иван, Санкт-Петербург</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+{% endblock content %}

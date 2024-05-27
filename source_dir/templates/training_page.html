@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}
+{{training.title}}
+{% endblock title %}
+
+{% block content %}
+<div class="content center">
+    <h1 class="training-title">{{training.title}}</h1>
+    <img width="500px" class="training-img" src="{{training.image.url}}" alt="">
+    <div class="description">
+        <p>{{training.description}}</p> <br>
+        <p style="text-align: center"><a href="#" class="btn">Записаться</a></p>
+    </div>
+    <br>
+    <br>
+
+
+</div>
+{% endblock content %}

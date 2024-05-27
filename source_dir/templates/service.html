@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}
+Тренировки
+{% endblock title %}
+
+{% block content %}
+<section class="trainings">
+    <h2>Тренировки</h2>
+    <div class="trainings-list">
+
+    {% for training in  trainings%}
+    <div class="training">
+      <div class="training-image">
+        <img src="{{training.image.url}}" alt="Изображение тренировки 1">
+      </div>
+      <div class="training-info">
+        <h3>{{training.title}}</h3>
+        <p>{{training.description}}</p>
+        <a href="{% url "training" slug=training.slug%}" class="btn">Записаться</a>
+      </div>
+    </div>
+      {% endfor %}
+
+    </div>
+  </section>
+{% endblock content %}

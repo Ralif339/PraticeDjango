@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <header>
+        <h1>Сайт для здорового образа жизни и фитнеса</h1>
+        <nav>
+          <ul>
+            <li><a href="{% url "main" %}">Главная</a></li>
+            <li><a href="{% url "service" %}">Тренировки</a></li>
+            <li><a href="{% url "contacts" %}">Контакты</a></li>
+            {% if user.is_authenticated %}
+            <li><a href="{% url "list" %}">Записи</a></li>
+            <li><a href="{% url "logout" %}">Выйти</a></li>
+            {% else %}
+            <li><a href="{% url "login" %}">Войти как тренер</a></li>
+            {% endif %}
+          </ul>
+        </nav>
+      </header>
+      <main>
+        {% block content %}
+    
+        {% endblock content %}
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p class="copy">Copyright &copy; 2024 Сайт для здорового образа жизни и фитнеса</p>
+        <ul class="social-media">
+          <li><a href="#"><img src="{% static "img/facebook.png" %}" alt=""></a></li>
+          <li><a href="#"><img src="{% static "img/inst.png" %}" alt=""></a></li>
+          <li><a href="#"><img src="{% static "img/telegram.png" %}" alt=""></a></li>
+        </ul>
+      </div>
+    </footer>
+    
+</body>
+</html>

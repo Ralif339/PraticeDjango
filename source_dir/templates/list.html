@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}
+Записи
+{% endblock title %}
+
+{% block content %}
+<section class="trainings">
+    <h2>Записи</h2>
+    <div class="trainings-list">
+
+    {% for reg in regs %}
+    <div class="training">
+      <div class="training-info">
+        <h3>{{reg.title}}</h3>
+        <p>{{reg.name}}</p>
+        <p>{{reg.date}}</p>
+        <p>{{reg.duration}}</p>
+      </div>
+    </div>
+      {% endfor %}
+
+    </div>
+  </section>
+{% endblock content %}
