@@ -14,9 +14,10 @@
     <div class="training">
       <div class="training-info">
         <h3>{{reg.title}}</h3>
-        <p>{{reg.name}}</p>
-        <p>{{reg.date}}</p>
-        <p>{{reg.duration}}</p>
+        <p>Имя: {{reg.name}}</p>
+        <p>Дата: {{reg.date}}</p>
+        <p>Длительность: {{reg.duration}}</p>
+        <a href="{% url "list_delete" id=reg.id %}" class="btn">Delete</a>
       </div>
     </div>
       {% endfor %}

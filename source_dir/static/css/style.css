@@ -7,6 +7,12 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    height: 100%;
+}
+
+main {
+  min-height: 742px;
+  background-color: #ffffff;
 }
 
 a {
@@ -17,7 +23,7 @@ a {
   /* Заголовок */
   
 header {
-    background-color: #222;
+    background-color: #647ec3;
     color: #fff;
     padding: 20px 0;
   }
@@ -50,17 +56,12 @@ header {
   
   /* Главный раздел */
   
-  /* main {
-    padding: 40px 0;
-  } */
-  
   /* Секция "Герой" */
   
   .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f5f5f5;
     padding: 40px;
   }
   
@@ -81,7 +82,7 @@ header {
   .hero-text a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #222;
+    background-color: #647ec3;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
@@ -89,7 +90,7 @@ header {
   }
   
   .hero-text a:hover {
-    background-color: #333;
+    background-color: #aec1f5;
   }
   
   .hero-image {
@@ -104,7 +105,6 @@ header {
   
 .services {
     padding: 40px 0;
-    background-color: #f5f5f5;
   }
   
 .services h2 {
@@ -146,7 +146,6 @@ header {
   
 .testimonials {
     padding: 40px 0;
-    background-color: #f5f5f5;
   }
   
 .testimonials h2 {
@@ -222,13 +221,13 @@ header {
   }
   
   .call-to-action a:hover {
-    background-color: #ccc;
+    background-color: #aec1f5;
   }
   
   /* Нижний колонтитул */
   
   footer {
-    background-color: #222;
+    background-color: #647ec3;
     color: #fff;
     padding: 20px 0;
   }
@@ -259,7 +258,6 @@ header {
 
   .trainings {
     padding: 40px 0;
-    background-color: #f5f5f5;
   }
   
   .trainings h2 {
@@ -309,7 +307,7 @@ header {
   .training-info a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #222;
+    background-color: #647ec3;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
@@ -317,7 +315,7 @@ header {
   }
   
   .training-info a:hover {
-    background-color: #333;
+    background-color: #aec1f5;
   }
   
 .center {
@@ -340,7 +338,7 @@ header {
 .description a {
   display: inline-block;
     padding: 10px 20px;
-    background-color: #222;
+    background-color: #647ec3;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
@@ -350,7 +348,7 @@ header {
 }
 
 .description a:hover {
-  background-color: #333;
+  background-color: #aec1f5;
 }
 
 .training-title {
@@ -359,3 +357,55 @@ header {
   margin-top: 20px;
 }
 
+.middle {
+  align-content: center;
+  height: 742px;
+}
+
+form {
+  border: 1px solid #c6c7cc;
+  width: fit-content;
+  padding: 15px;
+  margin: 0 auto;
+  border-radius: 5px;
+  font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: white;
+}
+
+.helptext {
+  color: #c6c7cc;
+  font-size: 14px;
+}
+
+.btn {
+  padding: 8px 16px;
+  margin: 10px auto;
+  display: block;
+  background-color: #647ec3;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #aec1f5;
+}
+
+input, select {
+  border-radius: 5px;
+  border: 1px solid #c6c7cc;
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.success {
+  color: rgb(78, 203, 78);
+  text-align: center;
+  margin: 20px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
